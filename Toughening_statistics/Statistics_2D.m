@@ -690,7 +690,7 @@ end
 fig = figure('Color', 'w');
 
 set(fig, 'Position', [200, 300, 380, 280]);
-plot((1:N), N_factor*means(1:N), '-', 'LineWidth',3,'MarkerFaceColor','B','MarkerEdgeColor','none');hold on;
+plot((1:N), means(1:N), '-', 'LineWidth',3,'MarkerFaceColor','B','MarkerEdgeColor','none');hold on;
 plot((1:N), m_DNS(1:N), 'o','MarkerFaceColor','k','MarkerEdgeColor','k','MarkerSize',5);
 
 xlabel('N', 'FontSize', 18, 'FontName', 'Times', 'FontWeight', 'normal', 'Interpreter', 'latex');
